@@ -21,36 +21,3 @@ const db = getFirestore(app);
 
 export {auth, db}
 
-
-// rules_version = '2';
-
-// service cloud.firestore {
-//   match /databases/{database}/documents {
-//     match /{document=**} {
-//       allow read, write: if true;
-//     }
-//   }
-// }
-
-
-// service cloud.firestore {
-//   match /databases/{database}/documents {
-//     match /questionBoards/{boardId} {
-//       allow read, write: if request.auth != null;
-//     }
-//     match /questions/{questionId} {
-//       allow read, write: if request.auth != null;
-//     }
-//   }
-// }
-
-// service cloud.firestore {
-//   match /databases/{database}/documents {
-//     match /questionBoards/{boardId} {
-//       allow read, write: if request.auth != null;
-//     }
-//     match /questions/{questionId} {
-//       allow read, write: if request.auth != null;
-//     }
-//   }
-// }

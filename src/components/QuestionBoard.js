@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { db, auth } from '../firebaseConfig';
 import { collection, addDoc, query, where, orderBy, onSnapshot, serverTimestamp, doc, updateDoc, increment, getDoc, getDocs } from "firebase/firestore";
-import '../QuestionBoard.css'; // Import CSS file
+import '../QuestionBoard.css'; 
 
 const QuestionBoard = () => {
   const { boardKey } = useParams();

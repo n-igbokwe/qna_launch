@@ -1,61 +1,7 @@
-/* body {
-    background-color: white;
-    color: black;
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .SignupPage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
-  
-  input[type="email"], input[type="password"], select {
-    width: 300px;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid black;
-    border-radius: 4px;
-    background-color: white;
-    color: black;
-  }
-  
-  button {
-    padding: 10px 20px;
-    margin: 10px 5px;
-    border: 1px solid black;
-    border-radius: 4px;
-    background-color: black;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  button:hover {
-    background-color: white;
-    color: black;
-  }
-  
-  .errorMessage {
-    color: red;
-  } */
 
 
-  body {
+
+   body {
     background-color: white;
     color: black;
     font-family: 'Arial', sans-serif;
@@ -81,7 +27,9 @@
     right: 10px;
   }
   
-  input[type="email"], input[type="password"], select {
+  .SignupPage input[type="email"],
+  .SignupPage input[type="password"],
+  .SignupPage select {
     width: 400px;
     padding: 15px;
     margin: 15px 0;
@@ -92,7 +40,7 @@
     font-size: 16px;
   }
   
-  button {
+  .SignupPage button {
     padding: 15px 30px;
     margin: 15px 10px;
     border: 1px solid black;
@@ -104,12 +52,12 @@
     transition: background-color 0.3s, color 0.3s;
   }
   
-  button:hover {
+  .SignupPage button:hover {
     background-color: white;
     color: black;
   }
   
-  button-container {
+  .button-container {
     display: flex;
     justify-content: center;
   }
@@ -119,4 +67,22 @@
     font-size: 16px;
   }
   
+ 
+  @media (max-width: 600px) {
+    .SignupPage input[type="email"],
+    .SignupPage input[type="password"],
+    .SignupPage select {
+      width: 90%;
+    }
+  
+    .logo {
+      font-size: 40px;
+      top: 5px;
+      right: 5px;
+    }
+  
+    .SignupPage button {
+      width: 90%;
+    }
+  }
   

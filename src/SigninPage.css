@@ -1,58 +1,4 @@
-/* body {
-    background-color: white;
-    color: black;
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-  }
   
-  .SigninPage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
-  
-  input[type="email"], input[type="password"] {
-    width: 300px;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid black;
-    border-radius: 4px;
-    background-color: white;
-    color: black;
-  }
-  
-  button {
-    padding: 10px 20px;
-    margin: 10px 5px;
-    border: 1px solid black;
-    border-radius: 4px;
-    background-color: black;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  button:hover {
-    background-color: white;
-    color: black;
-  }
-  
-  .errorMessage {
-    color: red;
-  } */
   body {
     background-color: white;
     color: black;
@@ -78,7 +24,7 @@
     top: 10px;
     right: 10px;
   }
-
+  
   .main-logo {
     font-size: 64px;
     font-weight: bold;
@@ -91,7 +37,8 @@
     margin-top: 20px;
   }
   
-  input[type="email"], input[type="password"] {
+  .SigninPage input[type="email"],
+  .SigninPage input[type="password"] {
     width: 400px;
     padding: 15px;
     margin: 15px 0;
@@ -102,7 +49,7 @@
     font-size: 16px;
   }
   
-  button {
+  .SigninPage button {
     padding: 15px 30px;
     margin: 15px 10px;
     border: 1px solid black;
@@ -114,7 +61,7 @@
     transition: background-color 0.3s, color 0.3s;
   }
   
-  button:hover {
+  .SigninPage button:hover {
     background-color: white;
     color: black;
   }
@@ -129,4 +76,21 @@
     font-size: 16px;
   }
   
+
+  @media (max-width: 600px) {
+    .SigninPage input[type="email"],
+    .SigninPage input[type="password"] {
+      width: 90%;
+    }
+  
+    .logo {
+      font-size: 40px;
+      top: 5px;
+      right: 5px;
+    }
+  
+    .SigninPage button {
+      width: 90%;
+    }
+  }
   

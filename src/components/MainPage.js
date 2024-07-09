@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { db, auth } from '../firebaseConfig';
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
-import '../MainPage.css'; // Import CSS file
+import '../MainPage.css'; 
 
 const MainPage = () => {
   const navigate = useNavigate();

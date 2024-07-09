@@ -65,7 +65,7 @@
   .QuestionsList {
     flex: 1;
     overflow-y: auto;
-    margin-bottom: 60px; /* Adjusted for input at the bottom */
+    margin-bottom: 60px; 
   }
   
   .Question {

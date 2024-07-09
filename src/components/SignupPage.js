@@ -3,14 +3,12 @@ import React, { useState } from 'react';
 import { createUserWithEmailAndPassword, sendEmailVerification, signOut } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
 import { auth } from '../firebaseConfig';
-import '../SignupPage.css'; // Import CSS file
+import '../SignupPage.css'; 
 
 const universities = [
-  "example.edu",
-  "another.edu",
-  "someother.edu",
   "hotmail.com",
-  "gmail.com"
+  "gmail.com",
+  "outlook.com"
 ];
 
 const SignupPage = () => {

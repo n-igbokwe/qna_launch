@@ -33,7 +33,8 @@ const SigninPage = () => {
 
   return (
     <div className="SigninPage">
-      <div className="logo">q+a</div>
+    <div className="main-logo">q+a</div>
+      <div className="tagline">all of the knowledge, none of the awkwardness.</div>
       <input
         type="email"
         placeholder="Email"

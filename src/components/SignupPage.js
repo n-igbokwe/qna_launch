@@ -63,7 +63,7 @@ const SignupPage = () => {
       />
       <div className="button-container">
         <button onClick={signup}>Sign Up</button>
-        <button onClick={goToSignin}>Sign In Instead</button>
+        <button onClick={goToSignin}>Sign In</button>
       </div>
       {errorMessage && <p className="errorMessage">{errorMessage}</p>}
     </div>

@@ -37,9 +37,7 @@ const MainPage = () => {
 
   return (
     <div className="MainPage">
-      <div className="logo">q+a</div>
-      <div className="main-logo">q+a</div>
-      <div className="tagline">all of the knowledge, none of the awkwardness</div>
+        <div className="main-logo">q+a</div>
       <button onClick={createQuestionBoard}>Create Question Board</button>
       <div className="join-board">
         <p>Join Question Board</p>
